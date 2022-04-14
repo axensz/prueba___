@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Casa Inspiración</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="Index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Arte</a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Wold's Biggest University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laboriosam, est aliquid voluptatibus dolores impedit debitis nostrum vitae! Molestias voluptatibus sunt dignissimos voluptatum dolores fuga quibusdam eos quo maiores amet.</p>
+            <a href="" class="hero-btn">Visitanos para saber más</a>
+        </div>
+    </section>
+    
+/*Java menu*/
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
