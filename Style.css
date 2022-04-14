@@ -96,6 +96,9 @@ nav{
         z-index: 3;
         background-color: rgb(42, 169, 224,2);
     }
+    .logo{
+        top: -40px;
+    }
     .hamburger{
         display:block;
         position: absolute;
