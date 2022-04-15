@@ -16,7 +16,7 @@
 /*Barra de navegación*/
 nav{
     height: 4rem;
-    width: 100vw;
+    width: 100%;
     display: flex;
     z-index: 10;
     box-shadow: 0 3px 20px rgba(0,0,0,0.2);
