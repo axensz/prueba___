@@ -185,7 +185,6 @@ nav{
 .text-box h1{
     font-size: 62px;
     font-weight: 900;
-    position: relative;
 }
 .text-box p {
     margin: 10px 0 40px;
@@ -221,17 +220,11 @@ nav .fa{
 /*Dispositivos moviles - responsive*/
 @media(max-width: 700px){
     .text-box h1{
-        font-size: 40px;
-        font-weight: 900;
-        
+        font-size: 35px;
     }
     .text-box p {
-        margin: 10px 0 40px;
         font-size: 16px;
-        color: #fff;
     }
-
-
 }
 
 /*Seccion 2*/
@@ -427,3 +420,8 @@ footer{
     font-weight: 200;
     color: rgb(199, 199, 199);
   }
+@media(max-width: 700px){
+    .footer-content h3{
+        font-size: 30px;
+    }
+}
