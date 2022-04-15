@@ -220,11 +220,10 @@ nav .fa{
 /*Dispositivos moviles - responsive*/
 @media(max-width: 700px){
     .text-box h1{
-        font-size: 35px;
+        font-size: 20px;
     }
-    .text-box p {
-        font-size: 16px;
-    }
+
+
 }
 
 /*Seccion 2*/
@@ -420,8 +419,3 @@ footer{
     font-weight: 200;
     color: rgb(199, 199, 199);
   }
-@media(max-width: 700px){
-    .footer-content h3{
-        font-size: 30px;
-    }
-}
