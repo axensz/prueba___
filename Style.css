@@ -59,8 +59,8 @@ nav{
 }
 
 .nav-links li a:hover{
-    color:#000;
-    background-color: #fff;
+    color:#fff;
+    background-color: #2AA9E0;
     padding: 10px;
     border-radius: 50px;
 }
@@ -214,17 +214,11 @@ html{
     transition: 1s;
 
 }
-/*Desaparecer los iconos para dispositivos grandes*/
-nav .fa{
-    display: none;
-}
 /*Dispositivos moviles - responsive*/
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
     }
-
-
 }
 
 /*Seccion 2*/
@@ -254,7 +248,7 @@ p{
 }
 .course-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #2aa9e025;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
