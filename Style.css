@@ -15,6 +15,10 @@
 /*Barra de navegación*/
 nav{
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
 =======
 
 >>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
@@ -22,6 +26,7 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 nav img{
@@ -63,12 +68,37 @@ nav img{
     font-size: 20px;
 }
 >>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
+=======
+}
+nav img{
+    width: 6.25em;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+>>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #f44336;
+=======
+    background: #2AA9E0;
+>>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
 =======
     background: #2AA9E0;
 >>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
@@ -76,6 +106,7 @@ nav img{
     margin: auto;
     transition: 0.5s;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -174,6 +205,10 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 >>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
+=======
+.nav-links ul li:hover::after{
+    width: 100%;
+>>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
 }
 /*Texto general*/
 .text-box{
@@ -226,7 +261,11 @@ nav .fa{
     .nav-links {
         position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
         background: #f44336;
+=======
+        background: #2AA9E0;
+>>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
 =======
         background: #2AA9E0;
 >>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
