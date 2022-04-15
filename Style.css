@@ -14,10 +14,15 @@
 
 /*Barra de navegación*/
 nav{
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
 }
 nav img{
     width: 150px;
@@ -37,15 +42,41 @@ nav img{
     text-decoration: none;
     font-size: 13px;
 }
+=======
+}
+nav img{
+    width: 6.25em;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+>>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
+<<<<<<< HEAD
     background: #f44336;
+=======
+    background: #2AA9E0;
+>>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
     display: block;
     margin: auto;
     transition: 0.5s;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -139,6 +170,10 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 >>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
+=======
+.nav-links ul li:hover::after{
+    width: 100%;
+>>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
 }
 /*Texto general*/
 .text-box{
@@ -190,7 +225,11 @@ nav .fa{
     }
     .nav-links {
         position: absolute;
+<<<<<<< HEAD
         background: #f44336;
+=======
+        background: #2AA9E0;
+>>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
         height: 100vh;
         width: 200px;
         top: 0;
