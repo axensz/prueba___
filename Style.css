@@ -59,8 +59,8 @@ nav{
 }
 
 .nav-links li a:hover{
-    color:#000;
-    background-color: #fff;
+    color:#fff;
+    background-color: #2AA9E0;
     padding: 10px;
     border-radius: 50px;
 }
@@ -68,7 +68,6 @@ nav{
 .nav-links li{
     position:relative;
 }
-
 .nav-links li a:hover::before{
     width: 80%;
 }
@@ -254,7 +253,7 @@ p{
 }
 .course-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #2aa9e025;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -355,7 +354,7 @@ h3{
 /*Footer*/
 footer{
     margin-top: 15%;
-    background: #111;
+    background: #2585ad;
     height: auto;
     width: auto;
     padding-top: 40px;
@@ -403,7 +402,7 @@ footer{
     color: aqua;
   }
   .footer-bottom{
-    background: #000;
+    background: #156181;
     width: auto;
     padding: 20px 0;
     text-align: center;
