@@ -1,115 +1,91 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin:0; padding:0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
 /*Fondo general*/
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/bannercopia.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
 }
-
 /*Barra de navegación*/
 nav{
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
-=======
-
->>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
+    height: 4rem;
+    width: 100vw;
     display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
+    z-index: 10;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.2);
+}
+
+/*Logo*/
+
+.logo{
+    padding: 3vh 3vw;
+    text-align: left;
+    width: 20vw;
+    position: relative;
+    top: -30px;
+}
+
+.logo img{
+    height: auto;
+    width: 6rem;
+}
+
+/* Estilos de la barra de navegacion*/
+
+.nav-links{
+    width: 80vw;
+    display: flex;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
     align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-nav img{
-    width: 150px;
-}
-.nav-links{
-    flex: 1;
-    text-align: right;
-}
-.nav-links ul li{
+    text-transform: uppercase;
     list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
+    font-weight: 600;
 }
-.nav-links ul li a{
-    color: #fff;
+
+.nav-links li a{
+    margin: 0 0.7vw;
     text-decoration: none;
-    font-size: 13px;
-}
-=======
-}
-nav img{
-    width: 6.25em;
-}
-.nav-links{
-    flex: 1;
-    text-align: right;
-}
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.nav-links ul li a{
+    transition: all ease-in-out 350ms;
+    padding: 10px;
     color: #fff;
-    text-decoration: none;
-    font-size: 20px;
 }
->>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
-=======
+
+.nav-links li a:hover{
+    color:#000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50px;
 }
-nav img{
-    width: 6.25em;
+
+.nav-links li{
+    position:relative;
 }
-.nav-links{
-    flex: 1;
-    text-align: right;
+
+.nav-links li a:hover::before{
+    width: 80%;
 }
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
+
+/*Iconos - Barra de navegacion*/
+
+.hamburger div{
+    width: 30px;
+    height: 3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
-.nav-links ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
+
+.hamburger{
+    display: none;
 }
->>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    background: #f44336;
-=======
-    background: #2AA9E0;
->>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
-=======
-    background: #2AA9E0;
->>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
 /*Se ingresa lo necesario para el responsive*/
@@ -119,6 +95,9 @@ nav img{
         position: fixed;
         z-index: 3;
         background-color: rgb(42, 169, 224,2);
+    }
+    .logo{
+        top: -40px;
     }
     .hamburger{
         display:block;
@@ -193,22 +172,6 @@ nav img{
             transform: rotate(45deg) translate(-5px, -6px);
         }
 
-=======
-.nav-links ul li:hover::after{
-    width: 100%;
->>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
-=======
-.nav-links ul li:hover::after{
-    width: 100%;
->>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
-=======
-.nav-links ul li:hover::after{
-    width: 100%;
->>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
-=======
-.nav-links ul li:hover::after{
-    width: 100%;
->>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
 }
 /*Texto general*/
 .text-box{
@@ -222,13 +185,17 @@ nav img{
 }
 .text-box h1{
     font-size: 62px;
+    font-weight: 900;
 }
 .text-box p {
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 23px;
     color: #fff;
 }
 /*Boton del medio*/
+html{
+    scroll-behavior: smooth;
+}
 .hero-btn{
     display: inline-block;
     text-decoration: none;
@@ -239,10 +206,11 @@ nav img{
     background: transparent;
     position: relative;
     cursor: pointer;
+    transition: 2s;
 }
 .hero-btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #2AA9E0;
+    background: #2AA9E0;
     transition: 1s;
 
 }
@@ -255,38 +223,7 @@ nav .fa{
     .text-box h1{
         font-size: 20px;
     }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links {
-        position: absolute;
-<<<<<<< HEAD
-<<<<<<< HEAD
-        background: #f44336;
-=======
-        background: #2AA9E0;
->>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
-=======
-        background: #2AA9E0;
->>>>>>> parent of 1fa51d3 (Cambios en la nav bar)
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 0.8s;
-    }
-    nav .fa{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding: 30px;
-    }
+
 
 }
 
@@ -296,7 +233,9 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 50px;
 }
+
 h1{
     font-size: 36px;
     font-weight: 600;
@@ -330,8 +269,17 @@ h3{
 .course-col:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
+.row2{
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
 @media(max-width: 700px){
     .row{
+        flex-direction: column;
+    }
+    .row2{
         flex-direction: column;
     }
 }
@@ -364,13 +312,9 @@ h3{
     transition: 0.5s;
 }
 .layer:hover{
-<<<<<<< HEAD
     background: rgba(42, 169, 224, 0.7); 
-=======
-    background: rgba(226, 0, 0, 0.7); 
->>>>>>> parent of 07d434f (ultima)
 }
-.layer h3{
+.layer .h33{
     width: 100%;
     font-weight: 500;
     color: #fff;
@@ -382,7 +326,7 @@ h3{
     opacity: 0;
     transition: 0.5s;
 }
-.layer:hover h3{
+.layer:hover .h33{
     bottom: 50%;
     opacity: 1;    
 }
