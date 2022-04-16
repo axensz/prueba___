@@ -1,19 +1,8 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
-
-}
-/* Preguntas Frecuentes */
-/* Camilo es un perro */
-
 .preguntas  {
     width: 90%;
     margin: 100px auto;
 
 }
-
 .preguntas-faq {
     box-shadow: 0 0 15px -1px rgba(255, 15, 15, 0.1);
     padding: 30px;
@@ -25,13 +14,11 @@
     font-size: 2rem;
     margin-bottom: 30px;
 }
-
 .preguntas-faq .casilla-faq {
     box-shadow: 0 0 15px -1px rgba(0,0,0,.2);
     margin-bottom: 20px;
     border-radius: 10px;
 }
-
 .preguntas-faq .casilla-faq .pregunta {
     position: relative;
     display: flex;
@@ -41,7 +28,6 @@
     padding: 20px 20px 20px 80px;
     transition: .4s;
 }
-
 .preguntas-faq .casilla-faq .pregunta .mas {
     display: flex;
     justify-content: center;
@@ -56,7 +42,6 @@
 .preguntas-faq .casilla-faq .pregunta .mas:hover {
     box-shadow: 0 0 15px -1px rgba(0,0,0,.4);
 }
-
 .preguntas-faq .casilla-faq .pregunta span {
     position: absolute;
     left: 10px;
@@ -64,7 +49,6 @@
     top: 10px;
     opacity: .1;
 }
-
 .preguntas-faq .casilla-faq .respuesta {
     position: relative;
     padding: 0 20px 0 80px;
@@ -72,11 +56,9 @@
     height: 0; 
     transition: .4s;
 }
-
 .preguntas-faq .casilla-faq .respuesta p {
     font-size: 1.3rem;
 }
-
 .preguntas-faq .casilla-faq .respuesta span {
     position: absolute;
     left: 10px;

@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body,
-input,
-textarea {
-  font-family: "Poppins", sans-serif;
-}
-
 .container {
   position: relative;
   width: 100%;
@@ -21,6 +9,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .form {
@@ -33,17 +22,20 @@ textarea {
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  box-sizing: border-box;
 }
 
 .contact-form {
   background-color: #2aa9e0be;
   position: relative;
+  box-sizing: border-box;
 }
 
 .circle {
   border-radius: 50%;
   background: linear-gradient(135deg, transparent 20%, #2A3C8E);
   position: absolute;
+  box-sizing: border-box;
 }
 
 .circle.one {
@@ -51,12 +43,14 @@ textarea {
   height: 130px;
   top: 130px;
   right: -40px;
+  box-sizing: border-box;
 }
 .circle.two {
   width: 80px;
   height: 80px;
   top: 10px;
   right: 30px;
+  box-sizing: border-box;
 }
 
 .contact-form:before {
@@ -68,6 +62,7 @@ textarea {
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
+  box-sizing: border-box;
 }
 
 form {
@@ -75,6 +70,7 @@ form {
   z-index: 10;
   overflow: hidden;
   position: relative;
+  box-sizing: border-box;
 }
 
 .title {
@@ -83,11 +79,13 @@ form {
   font-size: 1.5rem;
   line-height: 1;
   margin-bottom: 0.7rem;
+  box-sizing: border-box;
 }
 
 .input-container {
   position: relative;
   margin: 1rem 0;
+  box-sizing: border-box;
 }
 
 .input {
@@ -102,6 +100,7 @@ form {
   letter-spacing: 0.5px;
   border-radius: 25px;
   transition: 0.3s;
+  box-sizing: border-box;
 }
 
 textarea.input {
@@ -110,6 +109,7 @@ textarea.input {
   border-radius: 22px;
   resize: none;
   overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .input-container label {
@@ -124,6 +124,7 @@ textarea.input {
   pointer-events: none;
   z-index: 1000;
   transition: 0.5s;
+  box-sizing: border-box;
 }
 
 .input-container.textarea label {
@@ -143,11 +144,13 @@ textarea.input {
   cursor: pointer;
   transition: 0.3s;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .btn:hover {
   background-color: transparent;
   color: #fff;
+  box-sizing: border-box;
 }
 
 .input-container span {
@@ -160,6 +163,7 @@ textarea.input {
   color: transparent;
   pointer-events: none;
   z-index: 500;
+  box-sizing: border-box;
 }
 
 .input-container span:before,
@@ -173,14 +177,17 @@ textarea.input {
   background-color: #2AA9E0;
   top: 50%;
   transform: translateY(-50%);
+  box-sizing: border-box;
 }
 
 .input-container span:before {
   left: 50%;
+  box-sizing: border-box;
 }
 
 .input-container span:after {
   right: 50%;
+  box-sizing: border-box;
 }
 
 .input-container.focus label {
@@ -188,18 +195,21 @@ textarea.input {
   transform: translateY(-50%);
   left: 25px;
   font-size: 0.8rem;
+  box-sizing: border-box;
 }
 
 .input-container.focus span:before,
 .input-container.focus span:after {
   width: 50%;
   opacity: 1;
+  box-sizing: border-box;
 }
 
 .contact-info {
   padding: 2.3rem 2.2rem;
   position: relative;
   font-weight: 900;
+  box-sizing: border-box;
 }
 
 .contact-info .title {
