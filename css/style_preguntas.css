@@ -1,14 +1,15 @@
+.contenedor_preguntas{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 .preguntas  {
-    width: 90%;
-    margin: 100px auto;
-
+    width: 100%;
 }
 .preguntas-faq {
     box-shadow: 0 0 15px -1px rgba(255, 15, 15, 0.1);
     padding: 30px;
 
 }
-
 .preguntas-faq .titulo-faq {
     text-align: center;
     font-size: 2rem;
@@ -67,3 +68,13 @@
     opacity: .1;
 }
 
+@media screen and (max-width: 800px){
+    .contenedor_preguntas{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .preguntas-faq .casilla-faq .pregunta .mas {
+        position: relative;
+        left: 8px;
+    }
+}
