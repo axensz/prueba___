@@ -13,22 +13,7 @@
 </head>
 <body>
     <section class="header">
-        <nav>
-            <div class="logo">
-                <img src="img/Logos/PNG/LogoPNGsincirculo2.png" alt="Logo Image">
-            </div>
-            <div class="hamburger">
-                <div class="bars1"></div>
-                <div class="bars2"></div>
-                <div class="bars3"></div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="arte.html">GALERÍA</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <?php require_once('navbar.php'); ?>
         <script src="js/Index.js"></script>
         <div class="text-box">
             <h1>CONTACTO</h1>
@@ -98,21 +83,7 @@
           <script src="js/app.js"></script>
 
           <footer class="footer2">
-            <div class="footer-content">
-                <h3>Casa Inspiración</h3>
-                <p>"El arte es amor hecho público."</p>
-                <ul class="social">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                    
-                </ul>
-            </div>
-            <div class="footer-bottom">
-                <p>copyright &copy;2022 Casa Inspiración. Diseñado por <span>Santiago, Felipe & Camilo</span></p>
-            </div>
+          <?php require_once('footer.php');?>
         </footer>
 </body>
 </html>
